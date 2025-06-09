@@ -18,3 +18,12 @@ ev3 = EV3Brick()
 
 # Write your program here.
 ev3.speaker.beep()
+
+mA = Motor(Port.A)
+mB = Motor(Port.B)
+
+mA.run(300)
+mB.run(-300)
+wait(3000)
+mA.brake()
+mB.brake()
